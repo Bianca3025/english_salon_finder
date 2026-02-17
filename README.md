@@ -162,6 +162,7 @@ Beauty in English は、単なるサロン一覧ではなく、外国人の実�
 
 ### 10-1. 使用予定の技術
 
+- 言語：Ruby 3.2
 - フレームワーク：Ruby on Rails 7.0
 - DB：PostgreSQL 15
 - デプロイ先：Render
