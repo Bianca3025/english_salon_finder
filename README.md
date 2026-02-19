@@ -175,3 +175,6 @@ Beauty in English は、単なるサロン一覧ではなく、外国人の実�
 
 ### 画面遷移図
 Figma：<https://www.figma.com/design/WCdGMQrxRCi8MlYWrkg99i/Beauty-in-English?node-id=0-1&m=dev&t=hGqQc2pVFQL6CM5s-1>
+
+### ER図
+<https://gyazo.com/130fcfef8e7b89c746f5828cc4d0afec>
