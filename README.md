@@ -172,3 +172,6 @@ Beauty in English は、単なるサロン一覧ではなく、外国人の実�
 
 開発期間が3週間未満と限られているため、講座で十分に学習してきた技術を採用したいと思います。
 これにより、バックエンドの基礎理解を深めながら、安定したMVPの構築に集中できると考えています。
+
+### 画面遷移図
+Figma：<https://www.figma.com/design/WCdGMQrxRCi8MlYWrkg99i/Beauty-in-English?node-id=0-1&m=dev&t=hGqQc2pVFQL6CM5s-1>
