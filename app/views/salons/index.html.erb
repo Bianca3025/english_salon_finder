@@ -1,0 +1,15 @@
+<h1>English-Friendly Beauty Salons in Tokyo</h1>
+
+<% if @salons.any? %>
+  <ul>
+    <% @salons.each do |salon| %>
+      <li>
+        <strong><%= link_to salon.name, salon_path(salon) %></strong><br>
+        <%= truncate(salon.description, length: 150) %>
+        <small><%= link_to "Read more →", salon_path(salon) %></small>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No salons available yet.</p>
+<% end %>
