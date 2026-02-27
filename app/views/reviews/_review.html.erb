@@ -1,0 +1,22 @@
+<tr id="review-<%= review.id %>">
+  <td>
+    <h3 class="small"><%= review.user.name %></h3>
+    <p><%= simple_format(review.content) %></p>
+  </td>
+  <% if current_user && current_user.own?(review) %>
+    <td class="action">
+      <ul class="list-inline justify-content-center" style="float: right;">
+        <li class="list-inline-item">
+          <%= link_to edit_review_path(review), class: "edit-review-link" do %>
+            <i class="bi bi-pencil-fill"></i>
+          <% end %>
+        </li>
+        <li class="list-inline-item">
+          <%= link_to review_path(review), class: "delete-review-link" do %>
+            <i class="bi bi-trash-fill"></i>
+          <% end %>
+        </li>
+      </ul>
+    </td>
+  <% end %>
+</tr>
