@@ -1,0 +1,8 @@
+<div class="row mb-3" id="review-form">
+  <div class="col-lg-8 offset-lg-2">
+    <%= form_with model: review, url: salon_reviews_path(salon), local: true do |f| %>
+      <%= f.text_area :content, class: "form-control mb-3", rows: 4, placeholder: "Write your review here..." %>
+      <%= f.submit "Post", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
