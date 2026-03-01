@@ -1,7 +1,9 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-10 col-lg-8 mx-auto">
-      <h1>Sign Up to Write a Review</h1>
+  <div class="mt-5 mb-4 text-center">
+    <h1>Sign Up to Write a Review</h1>
+  </div>
+    <div class="col-md-10 col-lg-6 mx-auto">
       <%= form_with model: @user do |f| %>
         <div class="mb-3">
           <%= f.label :name, class: "form-label" %>
@@ -19,11 +21,10 @@
           <%= f.label :password_confirmation, class: "form-label" %>
           <%= f.password_field :password_confirmation, class: "form-control" %>
         </div>
-        <%= f.submit "Sign up", class: "btn btn-primary" %>
+        <div class="mt-auto d-flex justify-content-end">
+          <%= f.submit "Sign up", class: "btn btn-purple" %>
+        </div>
       <% end %>
-      <div class='text-center'>
-        <%= link_to 'Go to Login', "#" %>
-      </div>
     </div>
   </div>
 </div>

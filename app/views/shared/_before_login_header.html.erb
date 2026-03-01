@@ -3,13 +3,14 @@
 
     <!-- Logo -->
     <div>
-      <%= link_to "Beauty in English", root_path, style: "font-weight: bold; font-size: 18px; text-decoration: none;" %>
+      <%= link_to "Beauty in English", root_path, class: "site-logo" %>
     </div>
 
     <!-- Right side actions -->
     <div style="display: flex; gap: 16px;">
-      <%= link_to "Sign up", new_user_path, style: "text-decoration: none;" %>
-      <%= link_to "Log in", login_path, style: "text-decoration: none;" %>
+      <%= link_to "Beauty Salons", root_path, class: "header-link" %>
+      <%= link_to "Sign up", new_user_path, class: "header-link" %>
+      <%= link_to "Log in", login_path, class: "header-link" %>
     </div>
 
   </nav>

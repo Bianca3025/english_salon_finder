@@ -5,17 +5,17 @@
     <div>
       <%= link_to "Beauty in English",
           root_path,
-          style: "font-weight: bold; font-size: 18px; text-decoration: none;" %>
+          class: "site-logo" %>
     </div>
 
     <!-- Right side actions -->
     <div style="display: flex; gap: 16px;">
-      <%= link_to "Beauty Salons", root_path, style: "text-decoration: none;" %>
+      <%= link_to "Beauty Salons", root_path, class: "header-link" %>
 
       <%= link_to "Log out",
           logout_path,
           data: { turbo_method: :delete },
-          style: "text-decoration: none;" %>
+          class: "header-link" %>
     </div>
 
   </nav>

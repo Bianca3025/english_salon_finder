@@ -1,4 +1,4 @@
-<div id="review-<%= review.id %>">
+<div id="review-<%= review.id %>", class="review-card mx-auto mb-3">
     <h3 class="small"><%= review.user.name %></h3>
     <p><%= simple_format(review.content) %></p>
   <% if current_user && current_user.own?(review) %>
