@@ -1,11 +1,17 @@
+<div class="container mt-4">
+  <div class="bg-white p-4 rounded shadow-sm">
 <h1><%= @salon.name %></h1>
 
 <p><%= simple_format(@salon.description) %></p>
+  </div>
 
 <% if current_user %>
-  <%= render "reviews/form", review: @review, salon: @salon %>
+  <div class="mt-4">
+    <%= render "reviews/form", review: @review, salon: @salon %>
   <% else %>
   <p>You must <%= link_to "log in", login_path %> to write a review.</p>
 <% end %>
+  </div>
 
   <%= render @reviews %>
+</div>

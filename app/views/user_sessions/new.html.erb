@@ -1,7 +1,9 @@
 <div class="container">
   <div class="row">
-    <div class=" col-md-10 col-lg-8 mx-auto">
+    <div class="mt-5 mb-4 text-center">
       <h1>Log in to Beauty in English</h1>
+    </div>
+      <div class="col-md-10 col-lg-6 mx-auto">
       <%= form_with url: login_path do |f| %>
         <div class="mb-3">
           <%= f.label :email %>
@@ -11,11 +13,10 @@
           <%= f.label :password %>
           <%= f.password_field :password, class: "form-control" %>
         </div>
-        <%= f.submit "Log in", class: "btn btn-primary" %>
+        <div class="mt-auto d-flex justify-content-end">
+          <%= f.submit "Log in", class: "btn btn-purple" %>
+        </div>
       <% end %>
-      <div class='text-center'>
-        <%= link_to 'Create account', new_user_path %>
-      </div>
     </div>
   </div>
 </div>

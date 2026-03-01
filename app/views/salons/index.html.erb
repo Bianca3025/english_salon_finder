@@ -1,15 +1,31 @@
-<h1>English-Friendly Beauty Salons in Tokyo</h1>
+<div class="container-md mt-4">
+<div class="mt-5 mb-4 text-center">
+  <h1 class="fw-bold mb-1">English-Friendly Beauty Salons in Tokyo</h1>
+  <p class="text-muted mb-0">Find salons where you can comfortably book services in English.</p>
+</div>
+  <div class="bg-white p-4 rounded shadow-sm">
 
 <% if @salons.any? %>
-  <ul>
+  <div class="row g-3">
     <% @salons.each do |salon| %>
-      <li>
-        <strong><%= link_to salon.name, salon_path(salon) %></strong><br>
-        <%= truncate(salon.description, length: 150) %>
-        <small><%= link_to "Read more →", salon_path(salon) %></small>
-      </li>
+      <div class="col-md-6">
+        <div class="card p-3 h-100">
+        <h5 class="mb-1">
+          <%= link_to salon.name, salon_path(salon), class: "salon-title-link" %><br>
+        </h5>
+
+        <p class="mb-2 text-muted">
+          <%= truncate(salon.description, length: 200) %>
+        </p>
+
+        <div class="mt-auto d-flex justify-content-end">
+          <%= link_to "Read more →", salon_path(salon), class: "btn btn-sm btn-outline-primary" %>
+        </div>
+        </div>
+      </div>
     <% end %>
-  </ul>
 <% else %>
   <p>No salons available yet.</p>
 <% end %>
+  </div>
+</div>

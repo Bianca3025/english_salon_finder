@@ -2,7 +2,9 @@
   <div class="col-lg-8 offset-lg-2">
     <%= form_with model: review, url: salon_reviews_path(salon), local: true do |f| %>
       <%= f.text_area :content, class: "form-control mb-3", rows: 4, placeholder: "Write your review here..." %>
-      <%= f.submit "Post", class: "btn btn-primary" %>
-    <% end %>
+      <div class="mt-auto d-flex justify-content-end">
+        <%= f.submit "Post", class: "btn btn-primary" %>
+      </div>  
+      <% end %>
   </div>
 </div>
